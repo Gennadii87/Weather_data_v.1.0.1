@@ -1,0 +1,48 @@
+/* Header.css */
+@media (min-width: 420px) {
+header {
+    text-align: center;
+  }
+  .buttonData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 65px;
+    background-color: #2985c2
+    
+  }
+  button {
+    background-color: #28a745;
+    color: #fff;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  button:hover {
+    background-color: #218838;
+  }
+}
+@media (max-width: 419px) {
+    .buttonData {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 75px;
+      background-color: #2985c2
+      
+    }
+    button {
+      color: #111111;
+      font-weight: 600;
+      margin-right: 5px;
+      margin-left: 5px;
+      padding: 10px;
+      background-color: #5ce7e0;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+    
+}

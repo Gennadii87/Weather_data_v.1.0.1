@@ -1,0 +1,80 @@
+/* WeatherForecast.css */
+@media (min-width: 420px) {
+  h2{
+    font: 1.5em sans-serif;
+    font-weight: 600;
+  }
+.weatherDisplayThen {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #bfe8ff; 
+    box-shadow: 0 0 7px #00000066;
+  }
+  .forecastCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  .forecastCard {
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 10px;
+    width: 240px;
+    background-color: #e9f7ff; 
+    box-shadow: 0 0 7px #00000066;
+    text-align: center;
+  }
+  .thenData {
+    color: #8d0202;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin: 0;
+  }
+}
+@media (max-width: 419px) {
+  h2{
+    font: 1.1em sans-serif;
+    font-weight:bolder;
+  }
+  .weatherDisplayThen {
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: #bfe8ff; 
+      box-shadow: 0 0 7px #00000066;
+    }
+    .forecastCards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-top: 20px;
+    }
+    .forecastCard {
+      color: #e2e2e2;
+      font: 0.8em sans-serif;
+      font-weight: 400;
+      word-spacing: 1px;
+      letter-spacing: 1px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px 15px 10px 15px;
+      margin: 10px;
+      width: 100%;
+      background-color: #0775b4; 
+      box-shadow: 0 0 7px #00000066;
+      text-align: center;
+    }
+    .thenData {
+      color: #7e0202;
+      font-weight: bolder;
+      font-size: 1.2rem;
+      margin: 0;
+    }
+  }

@@ -1,0 +1,30 @@
+@media (min-width: 420px) {
+.weatherDisplayNow {
+    text-align: center;
+    font-weight: 600;
+    word-spacing: 1px;
+    letter-spacing: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e9f7ff; 
+    box-shadow: 0 0 7px #00000066;
+  }
+}
+@media (max-width: 419px) {
+  .weatherDisplayNow {
+      text-align: center;
+      color: #e2e2e2;
+      font: 0.9em sans-serif;
+      font-weight: 400;
+      word-spacing: 1px;
+      letter-spacing: 1px;
+      border: 1px solid #646464;
+      margin-bottom: 5px;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: #0775b4; 
+      box-shadow: 0 0 7px #00000066;
+    }
+  }
