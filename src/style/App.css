@@ -49,7 +49,7 @@ body {
         padding: 10px;
         border-radius: 5px;
         /* background-image: url("../media/WinImg.png"); */
-        background-size: cover; /* или contain, или значение в пикселях или процентах */
+        background-size: cover; 
         background-image: url("https://png.pngtree.com/background/20230528/original/pngtree-phoenix-bird-in-flames-wallpapers-wallpapershd-picture-image_2774579.jpg");
         background-position: center center;
         background-repeat: no-repeat;
