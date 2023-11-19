@@ -20,6 +20,8 @@ function Weather({ data }) {
 
   return (
     <div className='weatherDisplayNow'>
+      <h2>Погода сейчас</h2>
+      <hr/>
       <p>Температура: {temperature}°C</p>
       <p>Ощущается как: {feelsLike}°C</p>
       <p>Влажность: {precipitation}%</p>
