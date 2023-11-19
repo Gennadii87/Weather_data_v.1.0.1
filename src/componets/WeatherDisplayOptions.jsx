@@ -1,7 +1,7 @@
 // WeatherDisplayOptions.js
 import React from 'react';
-import Weather from './Weather';
-import WeatherForecast from './WeatherForecast';
+import Weather from './Weather.jsx';
+import WeatherForecast from './WeatherForecast.jsx';
 
 const WeatherDisplayOptions = ({ weatherData, showForecast, selectedCity, customCity, countryCode, apiKey }) => {
   return (

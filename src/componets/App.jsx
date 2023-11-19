@@ -1,8 +1,8 @@
 import React from 'react';
-import useWeatherData from './useWeatherData';
-import CityOptions from './CityOptions';
-import WeatherDisplayOptions from './WeatherDisplayOptions';
-import Header from './Header';
+import useWeatherData from './useWeatherData.jsx';
+import CityOptions from './CityOptions.jsx';
+import WeatherDisplayOptions from './WeatherDisplayOptions.jsx';
+import Header from './Header.jsx';
 import '../style/App.css';
 
 function App() {

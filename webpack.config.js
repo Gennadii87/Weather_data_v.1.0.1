@@ -35,7 +35,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: ['babel-loader'],
             },
@@ -44,6 +44,10 @@ module.exports = {
                 use: [
                   {
                     loader: 'file-loader',
+                    options: {
+                      name: '[name].[ext]',
+                      outputPath: 'media/', // Это определяет папку, куда будут скопированы изображения
+                    },
                   },
                 ],
               },

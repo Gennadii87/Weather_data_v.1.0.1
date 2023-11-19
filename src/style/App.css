@@ -48,7 +48,12 @@ body {
         margin-bottom: 10px;
         padding: 10px;
         border-radius: 5px;
-        background-color: #e9f7ff;
+        /* background-image: url("../media/WinImg.png"); */
+        background-size: cover; /* или contain, или значение в пикселях или процентах */
+        background-image: url("https://png.pngtree.com/background/20230528/original/pngtree-phoenix-bird-in-flames-wallpapers-wallpapershd-picture-image_2774579.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-color: #e9f7ff; */
         min-height: 70vh;
         position: relative;
       }
@@ -59,6 +64,7 @@ body {
         right: 7px;
         bottom: 7px;
         left: 7px;
+        border: 2px solid #888888;
         box-shadow: inset 0 0 10px #00000080;
       }
       .error404 {
@@ -111,7 +117,11 @@ body {
         border: 1px solid #ccc;
         padding: 10px;
         border-radius: 5px;
-        background-color: #e9f7ff;
+        /* background-color: #e9f7ff; */
+        background-size:cover;
+        background-image: url("https://png.pngtree.com/background/20230528/original/pngtree-phoenix-bird-in-flames-wallpapers-wallpapershd-picture-image_2774579.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
         min-height: 65vh;
         position: relative;
       }
@@ -122,6 +132,7 @@ body {
         right: 7px;
         bottom: 7px;
         left: 7px;
+        border: 2px solid #000000;
         box-shadow: inset 0 0 10px #00000080;
       }
       .error404 {

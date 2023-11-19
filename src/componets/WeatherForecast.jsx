@@ -1,7 +1,7 @@
 // export default WeatherForecast;
 // WeatherForecast.js
 import React from 'react';
-import useWeatherForecast from './useWeatherForecast';
+import useWeatherForecast from './useWeatherForecast.jsx';
 import '../style/WeatherForecast.css';
 
 function WeatherForecast({ city, countryCode, apiKey }) {
