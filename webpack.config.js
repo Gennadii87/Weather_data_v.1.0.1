@@ -19,6 +19,9 @@ module.exports = {
         open: true,
         hot: true,
     },
+    // performance: {
+    //     hints: false,
+    // },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Development',
@@ -35,22 +38,30 @@ module.exports = {
                 ],
             },
             {
+                test: /.(png|jpe?g|gif)$/i,
+                type: 'asset/resource',
+                generator: {
+                  filename: 'media/[name][ext]',
+                },
+            },
+            {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: ['babel-loader'],
             },
-            {
-                test: /\.(png|jpe?g|gif)$/i,
-                use: [
-                  {
-                    loader: 'file-loader',
-                    options: {
-                      name: '[name].[ext]',
-                      outputPath: 'media/', // Это определяет папку, куда будут скопированы изображения
-                    },
-                  },
-                ],
-              },
+            // {
+            //     test: /\.(png|jpe?g|gif)$/i,
+            //     use: [
+            //       {
+            //         loader: 'file-loader',
+            //         options: {
+            //           name: '[name].[ext]',
+            //           esModule: false,
+            //           outputPath: 'media/', 
+            //         },
+            //       },
+            //     ],
+            //   },
         ],
     },
 };

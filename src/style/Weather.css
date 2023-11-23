@@ -8,14 +8,15 @@
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    background-color: #e9f7ff; 
+    background-color: #e9f7ff;
+    opacity: 0.97; 
     box-shadow: 0 0 7px #00000066;
   }
 }
 @media (max-width: 419px) {
   .weatherDisplayNow {
       text-align: center;
-      color: #e2e2e2;
+      color: #fafafa;
       font: 0.9em sans-serif;
       font-weight: 400;
       word-spacing: 1px;
@@ -25,6 +26,7 @@
       padding: 5px;
       border-radius: 5px;
       background-color: #0775b4; 
+      opacity: 0.98;
       box-shadow: 0 0 7px #00000066;
     }
   }
