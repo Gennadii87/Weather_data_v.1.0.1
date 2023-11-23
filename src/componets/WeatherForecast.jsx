@@ -1,4 +1,3 @@
-// export default WeatherForecast;
 // WeatherForecast.js
 import React from 'react';
 import useWeatherForecast from './useWeatherForecast.jsx';

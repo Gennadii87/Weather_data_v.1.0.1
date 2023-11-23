@@ -10,6 +10,9 @@ module.exports = {
         filename: 'bundle.js'
     },
     devtool: 'inline-source-map',
+    optimization: {
+        minimize: true,
+      },
     devServer: {
         historyApiFallback: true,
         static: {
@@ -19,9 +22,9 @@ module.exports = {
         open: true,
         hot: true,
     },
-    // performance: {
-    //     hints: false,
-    // },
+    performance: {
+        hints: false,
+    },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Development',

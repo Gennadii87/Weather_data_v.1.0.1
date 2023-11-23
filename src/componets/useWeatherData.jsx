@@ -2,22 +2,31 @@ import { useState } from 'react';
 
 const useWeatherData = () => {
   const [weatherData, setWeatherData] = useState(null);
-  const [selectedCity, setSelectedCity] = useState('Moscow');
+  const [selectedCity, setSelectedCity] = useState('Москва');
   const [customCity, setCustomCity] = useState('');
   const [showForecast, setShowForecast] = useState(false);
   const [error, setError] = useState(null); // Добавляем состояние для ошибок
   const [apiKey] = useState('ec564e086b97545003bd9a24c585246b');
 
-  const cities = ['Moscow', 'Saint Petersburg', 'Novosibirsk', 'Yakutsk', 'Magadan', 'Khabarovsk', 'Yuzhno-Sakhalinsk'];
+  const cities = ['Москва', 'Санкт-Петербург', 'Новосибирск', 'Иркутск', 'Якутск', 'Хабаровск', 'Комсомольск-на-Амуре', 'Магадан', 'Южно-Сахалинск', 'Владивосток', 'Находка'];
 
   const handleCityChange = (event) => {
-    setSelectedCity(event.target.value);
+    const selectedValue = event.target.value;
+
+    // Если выбран город из списка, сбрасываем пользовательское поле
+    if (cities.includes(selectedValue)) {
+      setCustomCity('');
+    }
+
+    setSelectedCity(selectedValue);
+    setWeatherData(null);
     setShowForecast(false);
     setError(null); // Сброс ошибки при изменении города
   };
 
   const handleCustomCityChange = (event) => {
-    setCustomCity(event.target.value);
+    setCustomCity(event.target.value.trim());
+    setWeatherData(null);
     setShowForecast(false);
     setError(null); // Сброс ошибки при изменении пользовательского города
   };
@@ -25,8 +34,13 @@ const useWeatherData = () => {
   const handleFetchData = async () => {
     try {
       const city = customCity || selectedCity;
-      const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ru&appid=${apiKey}&units=metric`;
 
+      if (!city) {
+        // Если строка после удаления пробелов пуста, не делаем запрос
+        return;
+      }
+
+      const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ru&appid=${apiKey}&units=metric`;
       const response = await fetch(apiUrl);
 
       if (!response.ok) {
@@ -62,7 +76,7 @@ const useWeatherData = () => {
     handleCustomCityChange,
     handleFetchData,
     handleShowForecast,
-    error, // Возвращаем состояние ошибок из хука
+    error, 
   };
 };
 
