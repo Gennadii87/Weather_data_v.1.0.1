@@ -48,7 +48,7 @@ body {
         padding: 10px;
         border-radius: 5px;
         background-image: url("../media/WinImg.png");
-        background-size: 60%; 
+        background-size:  50%;
         background-position: center center;
         background-repeat: no-repeat;
         background-color: #e9f7ff;
@@ -117,7 +117,7 @@ body {
         border-radius: 5px;
         background-color: #e9f7ff;
         background-image: url("../media/WinImg.png");
-        background-size:  85%;
+        background-size:  65%;
         background-position: center center;
         background-repeat: no-repeat;
         min-height: 65vh;
