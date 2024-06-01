@@ -5,4 +5,4 @@
 адрес ресурса https://openweathermap.org/price  <br/>
 Версия 1.0.1 <br/>
 
-Потестить проект не разворачивая можно тут `https://gennadii87.github.io/Weather_data_v.1.0.1/`
+***Потестить проект не разворачивая можно тут https://gennadii87.github.io/Weather_data_v.1.0.1/***
